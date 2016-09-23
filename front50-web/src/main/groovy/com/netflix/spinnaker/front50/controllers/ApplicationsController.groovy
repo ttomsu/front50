@@ -95,6 +95,7 @@ public class ApplicationsController {
     return getApplication().findAll()
   }
 
+  // Hubbahubba
   @PreAuthorize("hasPermission(#app.name, 'APPLICATION', 'WRITE')")
   @ApiOperation(value = "", notes = "Update an existing application within a specific `account`")
   @RequestMapping(method = RequestMethod.PUT)
